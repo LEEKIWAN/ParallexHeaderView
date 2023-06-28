@@ -13,6 +13,10 @@
 		833169112A4BC1C3007DBEC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8331690F2A4BC1C3007DBEC4 /* Main.storyboard */; };
 		833169132A4BC1C5007DBEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833169122A4BC1C5007DBEC4 /* Assets.xcassets */; };
 		833169162A4BC1C5007DBEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 833169142A4BC1C5007DBEC4 /* LaunchScreen.storyboard */; };
+		8331691F2A4BC1F9007DBEC4 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 8331691E2A4BC1F9007DBEC4 /* HPParallaxHeader */; };
+		833169212A4BC745007DBEC4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833169202A4BC745007DBEC4 /* HeaderView.swift */; };
+		833169232A4BC749007DBEC4 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833169222A4BC749007DBEC4 /* HeaderView.xib */; };
+		833169252A4BC834007DBEC4 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833169242A4BC834007DBEC4 /* NibLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		833169122A4BC1C5007DBEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		833169152A4BC1C5007DBEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		833169172A4BC1C5007DBEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		833169202A4BC745007DBEC4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		833169222A4BC749007DBEC4 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		833169242A4BC834007DBEC4 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8331691F2A4BC1F9007DBEC4 /* HPParallaxHeader in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +64,13 @@
 		833169082A4BC1C3007DBEC4 /* ParallexHeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				833169242A4BC834007DBEC4 /* NibLoadable.swift */,
 				833169092A4BC1C3007DBEC4 /* AppDelegate.swift */,
 				8331690B2A4BC1C3007DBEC4 /* SceneDelegate.swift */,
 				8331690D2A4BC1C3007DBEC4 /* ViewController.swift */,
 				8331690F2A4BC1C3007DBEC4 /* Main.storyboard */,
+				833169222A4BC749007DBEC4 /* HeaderView.xib */,
+				833169202A4BC745007DBEC4 /* HeaderView.swift */,
 				833169122A4BC1C5007DBEC4 /* Assets.xcassets */,
 				833169142A4BC1C5007DBEC4 /* LaunchScreen.storyboard */,
 				833169172A4BC1C5007DBEC4 /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = ParallexHeaderView;
+			packageProductDependencies = (
+				8331691E2A4BC1F9007DBEC4 /* HPParallaxHeader */,
+			);
 			productName = ParallexHeaderView;
 			productReference = 833169062A4BC1C3007DBEC4 /* ParallexHeaderView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 833168FD2A4BC1C3007DBEC4;
+			packageReferences = (
+				8331691D2A4BC1F9007DBEC4 /* XCRemoteSwiftPackageReference "HPParallaxHeader" */,
+			);
 			productRefGroup = 833169072A4BC1C3007DBEC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +145,7 @@
 				833169162A4BC1C5007DBEC4 /* LaunchScreen.storyboard in Resources */,
 				833169132A4BC1C5007DBEC4 /* Assets.xcassets in Resources */,
 				833169112A4BC1C3007DBEC4 /* Main.storyboard in Resources */,
+				833169232A4BC749007DBEC4 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +159,8 @@
 				8331690E2A4BC1C3007DBEC4 /* ViewController.swift in Sources */,
 				8331690A2A4BC1C3007DBEC4 /* AppDelegate.swift in Sources */,
 				8331690C2A4BC1C3007DBEC4 /* SceneDelegate.swift in Sources */,
+				833169252A4BC834007DBEC4 /* NibLoadable.swift in Sources */,
+				833169212A4BC745007DBEC4 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8331691D2A4BC1F9007DBEC4 /* XCRemoteSwiftPackageReference "HPParallaxHeader" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ngochiencse/HPParallaxHeader";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8331691E2A4BC1F9007DBEC4 /* HPParallaxHeader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8331691D2A4BC1F9007DBEC4 /* XCRemoteSwiftPackageReference "HPParallaxHeader" */;
+			productName = HPParallaxHeader;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 833168FE2A4BC1C3007DBEC4 /* Project object */;
 }
